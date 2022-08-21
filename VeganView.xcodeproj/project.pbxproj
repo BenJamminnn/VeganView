@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5A037AE28B2BDE100E296A5 /* NonVeganCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A037AC28B2BDE100E296A5 /* NonVeganCollection.swift */; };
+		B5A037AF28B2BDE100E296A5 /* OCRUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A037AD28B2BDE100E296A5 /* OCRUtil.swift */; };
+		B5F14CB428B2A3B10055C8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CB328B2A3B10055C8A3 /* AppDelegate.swift */; };
+		B5F14CB628B2A3B10055C8A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CB528B2A3B10055C8A3 /* SceneDelegate.swift */; };
+		B5F14CB828B2A3B10055C8A3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CB728B2A3B10055C8A3 /* WelcomeViewController.swift */; };
+		B5F14CBB28B2A3B10055C8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F14CB928B2A3B10055C8A3 /* Main.storyboard */; };
+		B5F14CBD28B2A3B20055C8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F14CBC28B2A3B20055C8A3 /* Assets.xcassets */; };
+		B5F14CC028B2A3B20055C8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F14CBE28B2A3B20055C8A3 /* LaunchScreen.storyboard */; };
+		B5F14CCB28B2A3B20055C8A3 /* VeganViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CCA28B2A3B20055C8A3 /* VeganViewTests.swift */; };
+		B5F14CD528B2A3B20055C8A3 /* VeganViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CD428B2A3B20055C8A3 /* VeganViewUITests.swift */; };
+		B5F14CD728B2A3B20055C8A3 /* VeganViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CD628B2A3B20055C8A3 /* VeganViewUITestsLaunchTests.swift */; };
+		B5F14CEA28B2A5550055C8A3 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CE728B2A5550055C8A3 /* CameraManager.swift */; };
+		B5F14CEB28B2A5550055C8A3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CE828B2A5550055C8A3 /* CameraViewController.swift */; };
+		B5F14CF028B2A8880055C8A3 /* PhotoSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CEF28B2A8880055C8A3 /* PhotoSourceViewController.swift */; };
+		B5F14CF328B2A8C60055C8A3 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CF228B2A8C60055C8A3 /* AnalysisViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5F14CC728B2A3B20055C8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5F14CA828B2A3B10055C8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5F14CAF28B2A3B10055C8A3;
+			remoteInfo = VeganView;
+		};
+		B5F14CD128B2A3B20055C8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5F14CA828B2A3B10055C8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5F14CAF28B2A3B10055C8A3;
+			remoteInfo = VeganView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5A037AC28B2BDE100E296A5 /* NonVeganCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonVeganCollection.swift; sourceTree = "<group>"; };
+		B5A037AD28B2BDE100E296A5 /* OCRUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRUtil.swift; sourceTree = "<group>"; };
+		B5F14CB028B2A3B10055C8A3 /* VeganView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeganView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F14CB328B2A3B10055C8A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5F14CB528B2A3B10055C8A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5F14CB728B2A3B10055C8A3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B5F14CBA28B2A3B10055C8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5F14CBC28B2A3B20055C8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5F14CBF28B2A3B20055C8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5F14CC128B2A3B20055C8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F14CC628B2A3B20055C8A3 /* VeganViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeganViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F14CCA28B2A3B20055C8A3 /* VeganViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganViewTests.swift; sourceTree = "<group>"; };
+		B5F14CD028B2A3B20055C8A3 /* VeganViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeganViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F14CD428B2A3B20055C8A3 /* VeganViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganViewUITests.swift; sourceTree = "<group>"; };
+		B5F14CD628B2A3B20055C8A3 /* VeganViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5F14CE728B2A5550055C8A3 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		B5F14CE828B2A5550055C8A3 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		B5F14CEF28B2A8880055C8A3 /* PhotoSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSourceViewController.swift; sourceTree = "<group>"; };
+		B5F14CF228B2A8C60055C8A3 /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5F14CAD28B2A3B10055C8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F14CC328B2A3B20055C8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F14CCD28B2A3B20055C8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5A037AB28B2BDD200E296A5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B5A037AC28B2BDE100E296A5 /* NonVeganCollection.swift */,
+				B5A037AD28B2BDE100E296A5 /* OCRUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B5F14CA728B2A3B10055C8A3 = {
+			isa = PBXGroup;
+			children = (
+				B5F14CB228B2A3B10055C8A3 /* VeganView */,
+				B5F14CC928B2A3B20055C8A3 /* VeganViewTests */,
+				B5F14CD328B2A3B20055C8A3 /* VeganViewUITests */,
+				B5F14CB128B2A3B10055C8A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5F14CB128B2A3B10055C8A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5F14CB028B2A3B10055C8A3 /* VeganView.app */,
+				B5F14CC628B2A3B20055C8A3 /* VeganViewTests.xctest */,
+				B5F14CD028B2A3B20055C8A3 /* VeganViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5F14CB228B2A3B10055C8A3 /* VeganView */ = {
+			isa = PBXGroup;
+			children = (
+				B5A037AB28B2BDD200E296A5 /* Util */,
+				B5F14CE528B2A5410055C8A3 /* Screens */,
+				B5F14CB328B2A3B10055C8A3 /* AppDelegate.swift */,
+				B5F14CB528B2A3B10055C8A3 /* SceneDelegate.swift */,
+				B5F14CB928B2A3B10055C8A3 /* Main.storyboard */,
+				B5F14CBC28B2A3B20055C8A3 /* Assets.xcassets */,
+				B5F14CBE28B2A3B20055C8A3 /* LaunchScreen.storyboard */,
+				B5F14CC128B2A3B20055C8A3 /* Info.plist */,
+			);
+			path = VeganView;
+			sourceTree = "<group>";
+		};
+		B5F14CC928B2A3B20055C8A3 /* VeganViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5F14CCA28B2A3B20055C8A3 /* VeganViewTests.swift */,
+			);
+			path = VeganViewTests;
+			sourceTree = "<group>";
+		};
+		B5F14CD328B2A3B20055C8A3 /* VeganViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5F14CD428B2A3B20055C8A3 /* VeganViewUITests.swift */,
+				B5F14CD628B2A3B20055C8A3 /* VeganViewUITestsLaunchTests.swift */,
+			);
+			path = VeganViewUITests;
+			sourceTree = "<group>";
+		};
+		B5F14CE528B2A5410055C8A3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B5F14CF128B2A8AB0055C8A3 /* Analysis */,
+				B5F14CEE28B2A8680055C8A3 /* PhotoSource */,
+				B5F14CED28B2A57E0055C8A3 /* Camera */,
+				B5F14CEC28B2A5700055C8A3 /* Welcome */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B5F14CEC28B2A5700055C8A3 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B5F14CB728B2A3B10055C8A3 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B5F14CED28B2A57E0055C8A3 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B5F14CE728B2A5550055C8A3 /* CameraManager.swift */,
+				B5F14CE828B2A5550055C8A3 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B5F14CEE28B2A8680055C8A3 /* PhotoSource */ = {
+			isa = PBXGroup;
+			children = (
+				B5F14CEF28B2A8880055C8A3 /* PhotoSourceViewController.swift */,
+			);
+			path = PhotoSource;
+			sourceTree = "<group>";
+		};
+		B5F14CF128B2A8AB0055C8A3 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				B5F14CF228B2A8C60055C8A3 /* AnalysisViewController.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5F14CAF28B2A3B10055C8A3 /* VeganView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F14CDA28B2A3B20055C8A3 /* Build configuration list for PBXNativeTarget "VeganView" */;
+			buildPhases = (
+				B5F14CAC28B2A3B10055C8A3 /* Sources */,
+				B5F14CAD28B2A3B10055C8A3 /* Frameworks */,
+				B5F14CAE28B2A3B10055C8A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeganView;
+			productName = VeganView;
+			productReference = B5F14CB028B2A3B10055C8A3 /* VeganView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5F14CC528B2A3B20055C8A3 /* VeganViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F14CDD28B2A3B20055C8A3 /* Build configuration list for PBXNativeTarget "VeganViewTests" */;
+			buildPhases = (
+				B5F14CC228B2A3B20055C8A3 /* Sources */,
+				B5F14CC328B2A3B20055C8A3 /* Frameworks */,
+				B5F14CC428B2A3B20055C8A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5F14CC828B2A3B20055C8A3 /* PBXTargetDependency */,
+			);
+			name = VeganViewTests;
+			productName = VeganViewTests;
+			productReference = B5F14CC628B2A3B20055C8A3 /* VeganViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5F14CCF28B2A3B20055C8A3 /* VeganViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F14CE028B2A3B20055C8A3 /* Build configuration list for PBXNativeTarget "VeganViewUITests" */;
+			buildPhases = (
+				B5F14CCC28B2A3B20055C8A3 /* Sources */,
+				B5F14CCD28B2A3B20055C8A3 /* Frameworks */,
+				B5F14CCE28B2A3B20055C8A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5F14CD228B2A3B20055C8A3 /* PBXTargetDependency */,
+			);
+			name = VeganViewUITests;
+			productName = VeganViewUITests;
+			productReference = B5F14CD028B2A3B20055C8A3 /* VeganViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5F14CA828B2A3B10055C8A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B5F14CAF28B2A3B10055C8A3 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B5F14CC528B2A3B20055C8A3 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B5F14CAF28B2A3B10055C8A3;
+					};
+					B5F14CCF28B2A3B20055C8A3 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B5F14CAF28B2A3B10055C8A3;
+					};
+				};
+			};
+			buildConfigurationList = B5F14CAB28B2A3B10055C8A3 /* Build configuration list for PBXProject "VeganView" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5F14CA728B2A3B10055C8A3;
+			productRefGroup = B5F14CB128B2A3B10055C8A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5F14CAF28B2A3B10055C8A3 /* VeganView */,
+				B5F14CC528B2A3B20055C8A3 /* VeganViewTests */,
+				B5F14CCF28B2A3B20055C8A3 /* VeganViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5F14CAE28B2A3B10055C8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F14CC028B2A3B20055C8A3 /* LaunchScreen.storyboard in Resources */,
+				B5F14CBD28B2A3B20055C8A3 /* Assets.xcassets in Resources */,
+				B5F14CBB28B2A3B10055C8A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F14CC428B2A3B20055C8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F14CCE28B2A3B20055C8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5F14CAC28B2A3B10055C8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A037AF28B2BDE100E296A5 /* OCRUtil.swift in Sources */,
+				B5F14CB828B2A3B10055C8A3 /* WelcomeViewController.swift in Sources */,
+				B5F14CB428B2A3B10055C8A3 /* AppDelegate.swift in Sources */,
+				B5F14CF328B2A8C60055C8A3 /* AnalysisViewController.swift in Sources */,
+				B5A037AE28B2BDE100E296A5 /* NonVeganCollection.swift in Sources */,
+				B5F14CB628B2A3B10055C8A3 /* SceneDelegate.swift in Sources */,
+				B5F14CEA28B2A5550055C8A3 /* CameraManager.swift in Sources */,
+				B5F14CF028B2A8880055C8A3 /* PhotoSourceViewController.swift in Sources */,
+				B5F14CEB28B2A5550055C8A3 /* CameraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F14CC228B2A3B20055C8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F14CCB28B2A3B20055C8A3 /* VeganViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F14CCC28B2A3B20055C8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F14CD528B2A3B20055C8A3 /* VeganViewUITests.swift in Sources */,
+				B5F14CD728B2A3B20055C8A3 /* VeganViewUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5F14CC828B2A3B20055C8A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5F14CAF28B2A3B10055C8A3 /* VeganView */;
+			targetProxy = B5F14CC728B2A3B20055C8A3 /* PBXContainerItemProxy */;
+		};
+		B5F14CD228B2A3B20055C8A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5F14CAF28B2A3B10055C8A3 /* VeganView */;
+			targetProxy = B5F14CD128B2A3B20055C8A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5F14CB928B2A3B10055C8A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5F14CBA28B2A3B10055C8A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5F14CBE28B2A3B20055C8A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5F14CBF28B2A3B20055C8A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5F14CD828B2A3B20055C8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5F14CD928B2A3B20055C8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5F14CDB28B2A3B20055C8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDT7K59Q4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VeganView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Access";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Album access";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veganVIsion.VeganView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5F14CDC28B2A3B20055C8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDT7K59Q4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VeganView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Access";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Album access";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veganVIsion.VeganView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5F14CDE28B2A3B20055C8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDT7K59Q4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veganVIsion.VeganViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeganView.app/VeganView";
+			};
+			name = Debug;
+		};
+		B5F14CDF28B2A3B20055C8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDT7K59Q4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veganVIsion.VeganViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeganView.app/VeganView";
+			};
+			name = Release;
+		};
+		B5F14CE128B2A3B20055C8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDT7K59Q4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veganVIsion.VeganViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VeganView;
+			};
+			name = Debug;
+		};
+		B5F14CE228B2A3B20055C8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RDT7K59Q4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veganVIsion.VeganViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VeganView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5F14CAB28B2A3B10055C8A3 /* Build configuration list for PBXProject "VeganView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F14CD828B2A3B20055C8A3 /* Debug */,
+				B5F14CD928B2A3B20055C8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F14CDA28B2A3B20055C8A3 /* Build configuration list for PBXNativeTarget "VeganView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F14CDB28B2A3B20055C8A3 /* Debug */,
+				B5F14CDC28B2A3B20055C8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F14CDD28B2A3B20055C8A3 /* Build configuration list for PBXNativeTarget "VeganViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F14CDE28B2A3B20055C8A3 /* Debug */,
+				B5F14CDF28B2A3B20055C8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F14CE028B2A3B20055C8A3 /* Build configuration list for PBXNativeTarget "VeganViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F14CE128B2A3B20055C8A3 /* Debug */,
+				B5F14CE228B2A3B20055C8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5F14CA828B2A3B10055C8A3 /* Project object */;
+}
