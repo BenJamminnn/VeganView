@@ -29,9 +29,7 @@ class AnalysisViewController: UIViewController, UITableViewDelegate {
         setupUI()
     }
     
-    private func setupUI() {
-        view.backgroundColor = .systemGreen
-
+    private func setupTitle() {
         // Title
         let titleOrigin = CGPoint(x: 0, y: 50)
         let titleSize = CGSize(width: view.frame.width, height: 80)
@@ -43,7 +41,12 @@ class AnalysisViewController: UIViewController, UITableViewDelegate {
         resultTitle.text = "Results"
         resultTitle.textColor = UIColor.black
         view.addSubview(resultTitle)
-        
+    }
+    
+    private func setupUI() {
+        view.backgroundColor = .systemGreen
+        setupTitle()
+
         // Label
         let labelWidth = 400
         let rectOrigin = CGPoint(x: view.center.x - CGFloat(labelWidth/2), y: view.center.y - 50)
@@ -55,7 +58,6 @@ class AnalysisViewController: UIViewController, UITableViewDelegate {
         resultLabel.textAlignment = .center
         
         view.addSubview(resultLabel)
-
         
         activityIndicator.frame = centeredRect
         view.addSubview(activityIndicator)
@@ -67,7 +69,8 @@ class AnalysisViewController: UIViewController, UITableViewDelegate {
                 guard let result = result,
                       error == nil else {
                     // Process Error
-                    self.activityIndicator.stopAnimating()
+                    self.resultLabel.text = "No Results Extracted from image!"
+                    self.activityIndicator.removeFromSuperview()
                     return
                 }
 
@@ -80,7 +83,7 @@ class AnalysisViewController: UIViewController, UITableViewDelegate {
                     self.setupTableViewWithItems(lineItems: results)
                     self.resultLabel.text = "NOT VEGAN"
                 }
-                self.activityIndicator.stopAnimating()
+                self.activityIndicator.removeFromSuperview()
             }
         }
     }
