@@ -146,13 +146,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the source of the Image you would like to Analyze" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz6-5h-H4T">
+                                <rect key="frame" x="26" y="60" width="362" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="p1L-Bl-AL8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer:  There are no guarantees for what is presented as Vegan vs. Non Vegan. All Data comes from PETA" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1a-Vl-4WY">
+                                <rect key="frame" x="45" y="769" width="324" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="93" id="qio-bD-Sy8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="twv-bz-1LR"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="twv-bz-1LR" firstAttribute="trailing" secondItem="D1a-Vl-4WY" secondAttribute="trailing" constant="45" id="10n-nC-zxZ"/>
+                            <constraint firstItem="D1a-Vl-4WY" firstAttribute="leading" secondItem="twv-bz-1LR" secondAttribute="leading" constant="45" id="1vl-FO-bBM"/>
                             <constraint firstItem="lIE-Cf-9AI" firstAttribute="centerY" secondItem="hbY-4B-7Fs" secondAttribute="centerY" id="53y-IK-kzr"/>
                             <constraint firstItem="Pzf-uh-wab" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wrk-oO-D0E" secondAttribute="trailing" constant="8" symbolic="YES" id="5pl-I4-Kj3"/>
+                            <constraint firstItem="Uz6-5h-H4T" firstAttribute="centerX" secondItem="hbY-4B-7Fs" secondAttribute="centerX" id="6qR-yG-rPl"/>
+                            <constraint firstItem="Uz6-5h-H4T" firstAttribute="top" secondItem="twv-bz-1LR" secondAttribute="top" constant="16" id="BqJ-0G-ncF"/>
                             <constraint firstItem="twv-bz-1LR" firstAttribute="trailing" secondItem="Pzf-uh-wab" secondAttribute="trailing" constant="64" id="TfL-Gn-sER"/>
+                            <constraint firstItem="twv-bz-1LR" firstAttribute="trailing" secondItem="Uz6-5h-H4T" secondAttribute="trailing" constant="26" id="XlU-tc-aYW"/>
+                            <constraint firstItem="twv-bz-1LR" firstAttribute="bottom" secondItem="D1a-Vl-4WY" secondAttribute="bottom" id="iFb-po-sjJ"/>
                             <constraint firstItem="bIF-D0-O8z" firstAttribute="leading" secondItem="twv-bz-1LR" secondAttribute="leading" constant="54" id="iiU-gc-0Mx"/>
                             <constraint firstItem="Wrk-oO-D0E" firstAttribute="leading" secondItem="twv-bz-1LR" secondAttribute="leading" constant="64" id="jPN-hL-G3A"/>
                             <constraint firstItem="lIE-Cf-9AI" firstAttribute="top" secondItem="Pzf-uh-wab" secondAttribute="bottom" id="ps3-sE-qn5"/>
@@ -165,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0Q-hC-LJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803" y="98"/>
+            <point key="canvasLocation" x="1802.8985507246377" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
