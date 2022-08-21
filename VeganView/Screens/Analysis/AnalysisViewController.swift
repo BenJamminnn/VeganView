@@ -45,12 +45,14 @@ class AnalysisViewController: UIViewController, UITableViewDelegate {
         view.addSubview(resultTitle)
         
         // Label
+        let labelWidth = 400
+        let rectOrigin = CGPoint(x: view.center.x - CGFloat(labelWidth/2), y: view.center.y - 50)
         let unit = 100
         let centeredRect = CGRect(origin: view.center, size: CGSize(width: unit, height: unit))
-        let labelOrigin = CGPoint(x: 10, y: view.center.y)
-        let labelRect =  CGRect(origin: labelOrigin, size: CGSize(width: view.frame.width, height: 100))
+        let labelRect = CGRect(origin: rectOrigin, size: CGSize(width: labelWidth, height: 100))
         resultLabel.frame = labelRect
         resultLabel.numberOfLines = 0
+        resultLabel.textAlignment = .center
         
         view.addSubview(resultLabel)
 
@@ -74,10 +76,9 @@ class AnalysisViewController: UIViewController, UITableViewDelegate {
                 if results.isEmpty {
                     // No Offending words, item is vegan
                     self.resultLabel.text = "ITS VEGAN"
-                    self.resultLabel.isHidden = false
                 } else {
                     self.setupTableViewWithItems(lineItems: results)
-                    self.resultLabel.isHidden = true
+                    self.resultLabel.text = "NOT VEGAN"
                 }
                 self.activityIndicator.stopAnimating()
             }
