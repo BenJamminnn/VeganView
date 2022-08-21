@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B57AB50228B2DE2700876A22 /* NonVeganTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */; };
 		B5A037AE28B2BDE100E296A5 /* NonVeganCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A037AC28B2BDE100E296A5 /* NonVeganCollection.swift */; };
 		B5A037AF28B2BDE100E296A5 /* OCRUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A037AD28B2BDE100E296A5 /* OCRUtil.swift */; };
 		B5F14CB428B2A3B10055C8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CB328B2A3B10055C8A3 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonVeganTableView.swift; sourceTree = "<group>"; };
 		B5A037AC28B2BDE100E296A5 /* NonVeganCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonVeganCollection.swift; sourceTree = "<group>"; };
 		B5A037AD28B2BDE100E296A5 /* OCRUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRUtil.swift; sourceTree = "<group>"; };
 		B5F14CB028B2A3B10055C8A3 /* VeganView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeganView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F14CF228B2A8C60055C8A3 /* AnalysisViewController.swift */,
+				B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */,
 			);
 			path = Analysis;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				B5F14CEA28B2A5550055C8A3 /* CameraManager.swift in Sources */,
 				B5F14CF028B2A8880055C8A3 /* PhotoSourceViewController.swift in Sources */,
 				B5F14CEB28B2A5550055C8A3 /* CameraViewController.swift in Sources */,
+				B57AB50228B2DE2700876A22 /* NonVeganTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

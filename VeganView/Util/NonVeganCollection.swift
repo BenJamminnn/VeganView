@@ -22,7 +22,7 @@ public let nonVeganIngredients = [
 "Allantoin",
 "Alligator",
 "Alligator Skin",
-"Alpha-Hydroxy Acids",
+"Alpha-Hydroxy Acid",
 "Ambergris",
 "Amerchol L101",
 "Amino Acids",
@@ -67,6 +67,8 @@ public let nonVeganIngredients = [
 "Cerebrosides",
 "Cetyl Alcohol",
 "Cetyl Palmitate",
+"Cheddar",
+"Cheese",
 "Chicken",
 "Chitosan",
 "Cholesterin",
@@ -111,6 +113,7 @@ public let nonVeganIngredients = [
 // G
 "Gel",
 "Gelatin",
+"Ghouda",
 "Glucose Tyrosinase",
 "Glycerin",
 "Glycerol",
@@ -122,6 +125,7 @@ public let nonVeganIngredients = [
 // H
 "Haggis",
 "Ham",
+"Herring",
 "Honeycomb",
 "Hide Glue",
 "Honey",
@@ -173,7 +177,11 @@ public let nonVeganIngredients = [
 "Polysorbate",
 "Pork",
 "Pristane",
+"Provolone",
 "Progesterone",
+
+// Q
+"Quail",
 
 // R
 "Rabbit",
@@ -187,6 +195,7 @@ public let nonVeganIngredients = [
 
 
 // S
+"Salmon",
 "Sheepskin",
 "Sable Brush",
 "Schitzel",
@@ -214,6 +223,7 @@ public let nonVeganIngredients = [
 "Stearic",
 "Talloweth-6",
 "Turtle Oil",
+"Trout",
 
 // W
 "Whey",

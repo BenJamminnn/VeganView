@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnalysisViewController: UIViewController {
+class AnalysisViewController: UIViewController, UITableViewDelegate {
 
     private var activityIndicator = UIActivityIndicatorView()
     
@@ -31,14 +31,29 @@ class AnalysisViewController: UIViewController {
     
     private func setupUI() {
         view.backgroundColor = .systemGreen
+
+        // Title
+        let titleOrigin = CGPoint(x: 0, y: 50)
+        let titleSize = CGSize(width: view.frame.width, height: 80)
+        
+        let titleRect = CGRect(origin: titleOrigin, size: titleSize)
+        let resultTitle = UILabel(frame: titleRect)
+        resultTitle.textAlignment = .center
+        resultTitle.font = UIFont(name: "Verdana-Bold", size: 24)
+        resultTitle.text = "Results"
+        resultTitle.textColor = UIColor.black
+        view.addSubview(resultTitle)
+        
+        // Label
         let unit = 100
-        let centeredRect = CGRect(origin: self.view.center, size: CGSize(width: unit, height: unit))
-        let labelOrigin = CGPoint(x: 10, y: self.view.center.y)
-        let labelRect =  CGRect(origin: labelOrigin, size: CGSize(width: self.view.frame.width, height: 100))
+        let centeredRect = CGRect(origin: view.center, size: CGSize(width: unit, height: unit))
+        let labelOrigin = CGPoint(x: 10, y: view.center.y)
+        let labelRect =  CGRect(origin: labelOrigin, size: CGSize(width: view.frame.width, height: 100))
         resultLabel.frame = labelRect
         resultLabel.numberOfLines = 0
         
         view.addSubview(resultLabel)
+
         
         activityIndicator.frame = centeredRect
         view.addSubview(activityIndicator)
@@ -59,25 +74,40 @@ class AnalysisViewController: UIViewController {
                 if results.isEmpty {
                     // No Offending words, item is vegan
                     self.resultLabel.text = "ITS VEGAN"
+                    self.resultLabel.isHidden = false
                 } else {
-                    self.resultLabel.text = "ITS NOT VEGAN \(results)"
+                    self.setupTableViewWithItems(lineItems: results)
+                    self.resultLabel.isHidden = true
                 }
                 self.activityIndicator.stopAnimating()
             }
         }
     }
     
-    private func processResult(wordResult: [String]) -> [String] {
-        var offendingWords = [String]()
+    private func setupTableViewWithItems(lineItems: [String: String]) {
+        let tableViewRectOrigin = CGPoint(x: 10, y: self.view.center.y - 50)
+        let tableViewRectSize = CGSize(width: self.view.frame.width - 20, height: 400)
+        let tableViewRect = CGRect(origin: tableViewRectOrigin, size: tableViewRectSize)
+        let resultingTable = NonVeganTableView(frame: tableViewRect, lineItems: lineItems)
+        resultingTable.delegate = self
+        view.addSubview(resultingTable)
+    }
+    
+    private func processResult(wordResult: [String]) -> [String: String] {
+        var offendingWords = [String: String]()
         for ingredient in wordResult {
             for nonVeganIngredient in nonVeganIngredients {
                 if ingredient.lowercased().contains(nonVeganIngredient.lowercased()) {
                     if !excludedList.contains(ingredient.lowercased()) {
-                        offendingWords.append(ingredient)
+                        offendingWords[ingredient] = nonVeganIngredient
                     }
                 }
             }
         }
         return offendingWords
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 56
     }
 }
