@@ -7,6 +7,13 @@
 
 import Foundation
 
+/// IDs to reference storyboard view controllers
+enum StoryboardIdentifiers: String {
+    case resultsFound = "ResultsFoundViewController"
+    case resultsNotFound = "ResultsNotFoundViewController"
+    case choose = "ChooseViewController"
+}
+
 /// Local List of non Vegan items
 public let nonVeganIngredients = [
 
@@ -35,6 +42,7 @@ public let nonVeganIngredients = [
 "Beeswax",
 
 // B
+"Bacon",
 "Beef",
 "Biotin",
 "Blood",
@@ -211,6 +219,7 @@ public let nonVeganIngredients = [
 "Stearic Acid",
 "Stearyl",
 "Steer",
+"Steak",
 "Steroids",
 "Linoleic Acid",
 "Lipase",

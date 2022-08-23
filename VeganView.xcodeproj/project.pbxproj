@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B57AB50228B2DE2700876A22 /* NonVeganTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */; };
+		B57AB50528B4618500876A22 /* ResultsFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57AB50428B4618500876A22 /* ResultsFoundViewController.swift */; };
+		B57AB50728B4619000876A22 /* ResultsNotFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57AB50628B4619000876A22 /* ResultsNotFoundViewController.swift */; };
 		B5A037AE28B2BDE100E296A5 /* NonVeganCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A037AC28B2BDE100E296A5 /* NonVeganCollection.swift */; };
 		B5A037AF28B2BDE100E296A5 /* OCRUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A037AD28B2BDE100E296A5 /* OCRUtil.swift */; };
 		B5F14CB428B2A3B10055C8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CB328B2A3B10055C8A3 /* AppDelegate.swift */; };
@@ -20,9 +22,7 @@
 		B5F14CD528B2A3B20055C8A3 /* VeganViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CD428B2A3B20055C8A3 /* VeganViewUITests.swift */; };
 		B5F14CD728B2A3B20055C8A3 /* VeganViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CD628B2A3B20055C8A3 /* VeganViewUITestsLaunchTests.swift */; };
 		B5F14CEA28B2A5550055C8A3 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CE728B2A5550055C8A3 /* CameraManager.swift */; };
-		B5F14CEB28B2A5550055C8A3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CE828B2A5550055C8A3 /* CameraViewController.swift */; };
 		B5F14CF028B2A8880055C8A3 /* PhotoSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CEF28B2A8880055C8A3 /* PhotoSourceViewController.swift */; };
-		B5F14CF328B2A8C60055C8A3 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F14CF228B2A8C60055C8A3 /* AnalysisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonVeganTableView.swift; sourceTree = "<group>"; };
+		B57AB50428B4618500876A22 /* ResultsFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsFoundViewController.swift; sourceTree = "<group>"; };
+		B57AB50628B4619000876A22 /* ResultsNotFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsNotFoundViewController.swift; sourceTree = "<group>"; };
 		B5A037AC28B2BDE100E296A5 /* NonVeganCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonVeganCollection.swift; sourceTree = "<group>"; };
 		B5A037AD28B2BDE100E296A5 /* OCRUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRUtil.swift; sourceTree = "<group>"; };
 		B5F14CB028B2A3B10055C8A3 /* VeganView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeganView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,9 +62,7 @@
 		B5F14CD428B2A3B20055C8A3 /* VeganViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganViewUITests.swift; sourceTree = "<group>"; };
 		B5F14CD628B2A3B20055C8A3 /* VeganViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B5F14CE728B2A5550055C8A3 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
-		B5F14CE828B2A5550055C8A3 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B5F14CEF28B2A8880055C8A3 /* PhotoSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSourceViewController.swift; sourceTree = "<group>"; };
-		B5F14CF228B2A8C60055C8A3 /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B57AB50328B4615D00876A22 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */,
+				B57AB50428B4618500876A22 /* ResultsFoundViewController.swift */,
+				B57AB50628B4619000876A22 /* ResultsNotFoundViewController.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
 		B5A037AB28B2BDD200E296A5 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +164,7 @@
 		B5F14CE528B2A5410055C8A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				B5F14CF128B2A8AB0055C8A3 /* Analysis */,
+				B57AB50328B4615D00876A22 /* Results */,
 				B5F14CEE28B2A8680055C8A3 /* PhotoSource */,
 				B5F14CED28B2A57E0055C8A3 /* Camera */,
 				B5F14CEC28B2A5700055C8A3 /* Welcome */,
@@ -174,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				B5F14CE728B2A5550055C8A3 /* CameraManager.swift */,
-				B5F14CE828B2A5550055C8A3 /* CameraViewController.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -185,15 +194,6 @@
 				B5F14CEF28B2A8880055C8A3 /* PhotoSourceViewController.swift */,
 			);
 			path = PhotoSource;
-			sourceTree = "<group>";
-		};
-		B5F14CF128B2A8AB0055C8A3 /* Analysis */ = {
-			isa = PBXGroup;
-			children = (
-				B5F14CF228B2A8C60055C8A3 /* AnalysisViewController.swift */,
-				B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */,
-			);
-			path = Analysis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,12 +330,12 @@
 				B5A037AF28B2BDE100E296A5 /* OCRUtil.swift in Sources */,
 				B5F14CB828B2A3B10055C8A3 /* WelcomeViewController.swift in Sources */,
 				B5F14CB428B2A3B10055C8A3 /* AppDelegate.swift in Sources */,
-				B5F14CF328B2A8C60055C8A3 /* AnalysisViewController.swift in Sources */,
 				B5A037AE28B2BDE100E296A5 /* NonVeganCollection.swift in Sources */,
 				B5F14CB628B2A3B10055C8A3 /* SceneDelegate.swift in Sources */,
+				B57AB50728B4619000876A22 /* ResultsNotFoundViewController.swift in Sources */,
 				B5F14CEA28B2A5550055C8A3 /* CameraManager.swift in Sources */,
 				B5F14CF028B2A8880055C8A3 /* PhotoSourceViewController.swift in Sources */,
-				B5F14CEB28B2A5550055C8A3 /* CameraViewController.swift in Sources */,
+				B57AB50528B4618500876A22 /* ResultsFoundViewController.swift in Sources */,
 				B57AB50228B2DE2700876A22 /* NonVeganTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,9 +16,8 @@ class WelcomeViewController: UIViewController {
     
     @IBAction func getStartedClicked(_ sender: Any) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let photoSourceVC = sb.instantiateViewController(withIdentifier: "ChooseViewController")
+        let photoSourceVC = sb.instantiateViewController(withIdentifier: StoryboardIdentifiers.choose.rawValue)
         photoSourceVC.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(photoSourceVC, animated: true)
     }
 }
-

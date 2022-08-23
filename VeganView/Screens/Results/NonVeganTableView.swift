@@ -82,13 +82,13 @@ class NonVeganItemTableViewCell: UITableViewCell {
         // Offending Line
         let height = 16.0
         let origin = CGPoint(x: 10, y: center.y - height/2.0)
-        let width = frame.width/2 - 5
+        let width = frame.width/2
         let size = CGSize(width: width, height: height)
         ingredientLineLabel.frame = CGRect(origin: origin, size: size)
         addSubview(ingredientLineLabel)
         
         // Offending Ingredient Found
-        let originDetail = CGPoint(x: frame.width - 10.0, y: center.y - height/2.0)
+        let originDetail = CGPoint(x: frame.width/2 - 10.0, y: center.y - height/2.0)
         matchedIngredientLabel.frame = CGRect(origin: originDetail, size: size)
         addSubview(matchedIngredientLabel)
     }
