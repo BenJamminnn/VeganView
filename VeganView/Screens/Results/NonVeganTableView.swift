@@ -23,6 +23,9 @@ class NonVeganTableView: UITableView, UITableViewDataSource {
         register(NonVeganItemTableViewCell.self, forCellReuseIdentifier: NonVeganItemTableViewCell.cellIdentifier)
         orderedKeys = Array(lineItems.keys).sorted()
         dataSource = self
+        
+        let header = TableViewHeader(frame: CGRect(x: 0, y: 0, width: frame.width, height: 40))
+        tableHeaderView = header
         reloadData()
     }
     
@@ -30,6 +33,10 @@ class NonVeganTableView: UITableView, UITableViewDataSource {
         fatalError("init(coder:) has not been implemented")
     }
 
+    private func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") ?? UIView()
+     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         lineItems.count
     }
@@ -49,22 +56,53 @@ class NonVeganTableView: UITableView, UITableViewDataSource {
     }
 }
 
+class TableViewHeader : UIView{
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupLabel()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    func setupLabel(){
+        let offendingIngredientOrigin = CGPoint(x: 10, y: center.y)
+        let size = CGSize(width: 300, height: 20)
+        let offendingIngredientLabel = UILabel(frame: CGRect(origin: offendingIngredientOrigin, size: size))
+        offendingIngredientLabel.font = UIFont(name: "Verdana-Bold", size: 12)
+        offendingIngredientLabel.text = "Offending Line"
+        offendingIngredientLabel.textAlignment = .left
+        offendingIngredientLabel.textColor = UIColor.black
+        addSubview(offendingIngredientLabel)
+        
+        let foundIngredientOrigin = CGPoint(x: frame.width - 140, y: center.y)
+        let foundIngredientLabel = UILabel(frame: CGRect(origin: foundIngredientOrigin, size: size))
+        foundIngredientLabel.font = UIFont(name: "Verdana-Bold", size: 12)
+        foundIngredientLabel.text = "Found Ingredient"
+        foundIngredientLabel.textColor = UIColor.black
+        addSubview(foundIngredientLabel)
+    }
+}
+
 class NonVeganItemTableViewCell: UITableViewCell {
     static let cellIdentifier = "analysisCell"
 
     private var matchedIngredientLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Verdana-SemiBold", size: 8)
+        label.font = UIFont(name: "Verdana-Bold", size: 10)
         label.numberOfLines = 0
         label.textAlignment = .right
+        label.textColor = UIColor.darkGray
         return label
     }()
     
     private var ingredientLineLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Verdana-SemiBold", size: 8)
+        label.font = UIFont(name: "Verdana-Bold", size: 10)
         label.numberOfLines = 0
         label.textAlignment = .left
+        label.textColor = UIColor.darkGray
         return label
     }()
     
@@ -80,15 +118,15 @@ class NonVeganItemTableViewCell: UITableViewCell {
     private func setup() {
         selectionStyle = .none
         // Offending Line
-        let height = 16.0
-        let origin = CGPoint(x: 10, y: center.y - height/2.0)
-        let width = frame.width/2
+        let height = 40.0
+        let origin = CGPoint(x: 10, y: center.y)
+        let width = frame.width/2 + 20
         let size = CGSize(width: width, height: height)
         ingredientLineLabel.frame = CGRect(origin: origin, size: size)
         addSubview(ingredientLineLabel)
         
         // Offending Ingredient Found
-        let originDetail = CGPoint(x: frame.width/2 - 10.0, y: center.y - height/2.0)
+        let originDetail = CGPoint(x: frame.width/2 - 10.0, y: center.y)
         matchedIngredientLabel.frame = CGRect(origin: originDetail, size: size)
         addSubview(matchedIngredientLabel)
     }

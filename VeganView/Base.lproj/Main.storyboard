@@ -172,7 +172,7 @@
                                 <rect key="frame" x="32.5" y="664" width="349" height="123"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="349" id="2ZT-aB-6VW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="349" id="2ZT-aB-6VW"/>
                                     <constraint firstAttribute="height" constant="123" id="RkW-6U-wT0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>

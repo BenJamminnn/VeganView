@@ -30,8 +30,8 @@ class ResultsFoundViewController: UIViewController, UITableViewDelegate {
         if nonVeganTableView.superview != nil {
             nonVeganTableView.removeFromSuperview()
         }
-        let tableViewRectOrigin = CGPoint(x: 10, y: view.center.y - 200)
-        let tableViewRectSize = CGSize(width: view.frame.width - 20, height: 500)
+        let tableViewRectOrigin = CGPoint(x: 16, y: view.center.y - 100)
+        let tableViewRectSize = CGSize(width: view.frame.width - 32, height: 350)
         let tableViewRect = CGRect(origin: tableViewRectOrigin, size: tableViewRectSize)
         nonVeganTableView = NonVeganTableView(frame: tableViewRect, lineItems: lineItems)
         nonVeganTableView.delegate = self
