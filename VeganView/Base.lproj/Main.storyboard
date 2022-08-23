@@ -185,10 +185,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glN-A8-hTN">
+                                <rect key="frame" x="372" y="50" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ipL-qA-DGU"/>
+                                    <constraint firstAttribute="width" constant="30" id="sKE-HH-SQK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="appInfoClicked:" destination="OTu-LR-msU" eventType="touchUpInside" id="ehC-N6-yvG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="twv-bz-1LR"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="twv-bz-1LR" firstAttribute="trailing" secondItem="glN-A8-hTN" secondAttribute="trailing" constant="12" id="1TC-lR-nrF"/>
                             <constraint firstItem="lIE-Cf-9AI" firstAttribute="centerY" secondItem="hbY-4B-7Fs" secondAttribute="centerY" id="53y-IK-kzr"/>
                             <constraint firstItem="Pzf-uh-wab" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wrk-oO-D0E" secondAttribute="trailing" constant="8" symbolic="YES" id="5pl-I4-Kj3"/>
                             <constraint firstItem="Uz6-5h-H4T" firstAttribute="centerX" secondItem="hbY-4B-7Fs" secondAttribute="centerX" id="6qR-yG-rPl"/>
@@ -199,6 +212,7 @@
                             <constraint firstItem="bIF-D0-O8z" firstAttribute="leading" secondItem="twv-bz-1LR" secondAttribute="leading" constant="54" id="iiU-gc-0Mx"/>
                             <constraint firstItem="Wrk-oO-D0E" firstAttribute="leading" secondItem="twv-bz-1LR" secondAttribute="leading" constant="64" id="jPN-hL-G3A"/>
                             <constraint firstItem="lIE-Cf-9AI" firstAttribute="top" secondItem="Pzf-uh-wab" secondAttribute="bottom" id="ps3-sE-qn5"/>
+                            <constraint firstItem="glN-A8-hTN" firstAttribute="top" secondItem="twv-bz-1LR" secondAttribute="top" constant="6" id="sbl-rB-Cnb"/>
                             <constraint firstItem="twv-bz-1LR" firstAttribute="trailing" secondItem="lIE-Cf-9AI" secondAttribute="trailing" constant="54" id="sgV-FG-9y5"/>
                             <constraint firstItem="bIF-D0-O8z" firstAttribute="top" secondItem="Wrk-oO-D0E" secondAttribute="bottom" id="tad-ly-1f8"/>
                             <constraint firstItem="bIF-D0-O8z" firstAttribute="centerY" secondItem="hbY-4B-7Fs" secondAttribute="centerY" id="uJq-sY-72x"/>
@@ -309,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKs-cB-Zpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2608.6956521739135" y="97.767857142857139"/>
+            <point key="canvasLocation" x="2790" y="-580"/>
         </scene>
         <!--Results Not Found View Controller-->
         <scene sceneID="EJU-MH-548">
@@ -363,6 +377,11 @@
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Scan Again"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lqyer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="click:" destination="mhu-fQ-I1r" eventType="touchUpInside" id="DbW-JG-lOW"/>
                                     <action selector="click:" destination="uqS-DN-qRR" eventType="touchUpInside" id="Qnc-b5-JNT"/>
@@ -391,13 +410,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmK-iS-Vpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mhu-fQ-I1r" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3418.840579710145" y="97.767857142857139"/>
+            <point key="canvasLocation" x="2791" y="98"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera" width="64" height="64"/>
         <image name="check" width="480" height="480"/>
         <image name="close" width="480" height="480"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="photoAlbum" width="100" height="100"/>
         <image name="vegan" width="512" height="512"/>
         <systemColor name="labelColor">

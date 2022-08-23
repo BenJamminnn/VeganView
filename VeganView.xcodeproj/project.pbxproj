@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B506497E28B5A00000AD8BCA /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506497D28B5A00000AD8BCA /* AppInfoViewController.swift */; };
 		B57AB50228B2DE2700876A22 /* NonVeganTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */; };
 		B57AB50528B4618500876A22 /* ResultsFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57AB50428B4618500876A22 /* ResultsFoundViewController.swift */; };
 		B57AB50728B4619000876A22 /* ResultsNotFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57AB50628B4619000876A22 /* ResultsNotFoundViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B506497D28B5A00000AD8BCA /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 		B57AB50128B2DE2700876A22 /* NonVeganTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonVeganTableView.swift; sourceTree = "<group>"; };
 		B57AB50428B4618500876A22 /* ResultsFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsFoundViewController.swift; sourceTree = "<group>"; };
 		B57AB50628B4619000876A22 /* ResultsNotFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsNotFoundViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B506497C28B59FF200AD8BCA /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B506497D28B5A00000AD8BCA /* AppInfoViewController.swift */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
 		B57AB50328B4615D00876A22 /* Results */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +174,7 @@
 		B5F14CE528B2A5410055C8A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B506497C28B59FF200AD8BCA /* AppInfo */,
 				B57AB50328B4615D00876A22 /* Results */,
 				B5F14CEE28B2A8680055C8A3 /* PhotoSource */,
 				B5F14CED28B2A57E0055C8A3 /* Camera */,
@@ -333,6 +344,7 @@
 				B5A037AE28B2BDE100E296A5 /* NonVeganCollection.swift in Sources */,
 				B5F14CB628B2A3B10055C8A3 /* SceneDelegate.swift in Sources */,
 				B57AB50728B4619000876A22 /* ResultsNotFoundViewController.swift in Sources */,
+				B506497E28B5A00000AD8BCA /* AppInfoViewController.swift in Sources */,
 				B5F14CEA28B2A5550055C8A3 /* CameraManager.swift in Sources */,
 				B5F14CF028B2A8880055C8A3 /* PhotoSourceViewController.swift in Sources */,
 				B57AB50528B4618500876A22 /* ResultsFoundViewController.swift in Sources */,

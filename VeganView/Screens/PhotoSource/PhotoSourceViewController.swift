@@ -114,4 +114,7 @@ class PhotoSourceViewController: UIViewController, PHPickerViewControllerDelegat
             navigationController?.pushViewController(resultFoundVC, animated: true)
         }
     }
+    @IBAction func appInfoClicked(_ sender: Any) {
+        
+    }
 }

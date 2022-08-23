@@ -197,10 +197,8 @@ public let nonVeganIngredients = [
 "Rennin",
 "Resinous Glaze",
 "Retinol",
-"RNA",
 "Ribonucleic Acid",
 "Royal Jelly",
-
 
 // S
 "Salmon",
