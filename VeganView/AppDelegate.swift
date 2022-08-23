@@ -3,7 +3,7 @@
 //  VeganView
 //
 //  Created by Ben Gabay on 8/21/22.
-//
+// https://www.flaticon.com/authors/juicy-fish - Icons
 
 import UIKit
 

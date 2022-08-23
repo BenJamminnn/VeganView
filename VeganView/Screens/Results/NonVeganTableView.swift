@@ -8,7 +8,7 @@
 import UIKit
 
 class NonVeganTableView: UITableView, UITableViewDataSource {
-    // Offending line : Ingridient Found
+    // Offending line : Ingredient Found
     private let lineItems: [String: String]
     private var orderedKeys = [String]()
     
